@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Envoi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="messagerie.css">
+</head>
+<body>
+  <main class="container-fluid min-vh-100 p-2">
+    <div class="row g-3 min-vh-100">
+      <div class="col-12 d-lg-none">
+        <input type="checkbox" class="btn-check" id="sidebarToggle" autocomplete="off">
+        <label class="btn app-card w-100 d-flex align-items-center justify-content-center gap-2"
+               for="sidebarToggle" data-bs-toggle="collapse" data-bs-target="#asideMenu" role="button">
+          <i class="bi bi-list fs-4"></i>
+          <span class="fw-semibold">Menu</span>
+        </label>
+      </div>
+      <aside class="col-12 col-lg-2 collapse d-lg-block" id="asideMenu">
+        <div class="card app-card sidebar h-100">
+          <div class="card-body mt-4">
+            <div class="brand  mb-5" href="#">
+              <img src="/images/Logo.svg" alt="" style="width: 300px;">
+            </div>
+            <nav class="nav flex-column gap-3 ">
+              <a class="nav-link" href="dashboard.html">Dashboard &gt;</a>
+              <a class="nav-link" href="utilisateur.html">Utilisateurs &gt;</a>
+              <a class="nav-link active" href="messagerie.html">Messagerie &gt;</a>
+              <a class="nav-link" href="tache.html">Taches &gt;</a>
+              <a class="nav-link" href="#">Calendrier &gt;</a>
+              <a class="nav-link" href="compte.html">Comptes &gt;</a>
+            </nav>
+          </div>
+        </div>
+      </aside>
+
+      <section class="col-12 col-lg-10">
+        <div class="card app-card topbar mb-3">
+          <div class="card-body d-flex align-items-center justify-content-between py-2">
+            <div>
+              <h1 class="mb-2">Bonjour, Adminou Sani</h1>
+              <p class="breadcrumb-line mb-0"><i class="bi bi-house-fill"></i> &gt; Tableau de bord</p>
+            </div>
+            <div class="d-flex align-items-center gap-3 top-icons">
+              <i class="bi bi-gear"></i>
+              <span class="bell-wrap"><i class="bi bi-bell"></i><span class="dot"></span></span>
+              <i class="bi bi-person"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid rounded-3 border border-light border-opacity-25 shadow-lg bg-opacity-50 p-3 p-xl-4 div-bg">
+          <nav class="navbar navbar-expand-lg rounded-3 border border-light border-opacity-25 bg-opacity-50 shadow-sm mb-4 px-4 py-2 div-bV">
+            <div class="container-fluid">
+              <ul class="navbar-nav w-100 justify-content-between align-items-center gap-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold fs-4" href="messagerie.html">
+                    <i class="bi bi-envelope fs-1 align-middle me-3"></i>Réception
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold fs-4 px-5 py-4 rounded-3 border border-light border-opacity-25 bg-light bg-opacity-25 shadow" href="envoi.html">
+                    <i class="bi bi-send fs-1 align-middle me-3"></i>Envoi
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold fs-4" href="#">
+                    <i class="bi bi-envelope fs-1 align-middle me-3"></i>Brouillon
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold fs-4" href="#">
+                    <i class="bi bi-envelope fs-1 align-middle me-3"></i>Epinglé
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold fs-4" href="#">
+                    <i class="bi bi-envelope fs-1 align-middle me-3"></i>Spam
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-bold fs-4" href="#">
+                    <i class="bi bi-envelope fs-1 align-middle me-3"></i>Corbeille
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="row align-items-center mb-4 gy-3">
+            <div class="col-12 col-lg">
+              <div class="d-flex align-items-center gap-4 fs-1">
+                <input class="form-check-input bg-transparent border-light border-3" type="checkbox" aria-label="Tout sélectionner">
+                <button class="btn btn-link text-white p-0 fs-1"><i class="bi bi-trash3"></i></button>
+                <button class="btn btn-link text-white p-0 fs-1"><i class="bi bi-envelope-open"></i></button>
+                <button class="btn btn-link text-white p-0 fs-1"><i class="bi bi-folder"></i></button>
+                <button class="btn btn-link text-white p-0 fs-1"><i class="bi bi-tag"></i></button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-auto">
+              <div class="d-flex justify-content-lg-end gap-4 fs-1">
+                <button class="btn btn-link text-white p-0 fs-1"><i class="bi bi-arrow-clockwise"></i></button>
+                <button class="btn btn-link text-white p-0 fs-1"><i class="bi bi-three-dots-vertical"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="vstack gap-3">
+            <article class="card text-white border-0 rounded-3 shadow bg-light bg-opacity-25">
+              <div class="card-body py-4 px-4">
+                <div class="row g-4">
+                  <div class="col-12 col-md-2 d-flex align-items-center justify-content-start gap-3 text-center fs-1">
+                   <input class="form-check-input bg-transparent border-light border-3" type="checkbox" aria-label="Tout sélectionner"> <i class="bi bi-pin-angle fs-1"></i>
+                  </div>
+                  <div class="col-12 col-md-3 d-flex align-items-center gap-4">
+                    <span class="color_C d-flex align-items-center justify-content-center bg-light rounded-circle fw-bold display-6 p-3 lh-1">AS</span>
+                    <h2 class="h3 fw-bold mb-0">Adminou sani</h2>
+                  </div>
+                  <div class="col-12 col-md-2 fw-bold fs-5">
+                    Rappel sur le rendu <br>projet N°00000
+                  </div>
+                  <div class="col-12 col-md-3 fs-5 text-truncate">
+                    Lorem ipsum sit dolor amet, lorem ipsu...
+                  </div>
+                  <div class="col-12 col-md-2 text-md-end fw-bold fs-5">
+                    08:23 AM
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <div class="py-5"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

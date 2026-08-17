@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compte</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="compte.css">
+</head>
+
+<body>
+  <main class="container-fluid min-vh-100 p-2 login-page">
+    <div class="row g-3 min-vh-100 ">
+      <div class="col-12 d-lg-none">
+        <input type="checkbox" class="btn-check" id="sidebarToggle" autocomplete="off">
+        <label class="btn app-card w-100 d-flex align-items-center justify-content-center gap-2"
+               for="sidebarToggle" data-bs-toggle="collapse" data-bs-target="#asideMenu" role="button">
+          <i class="bi bi-list fs-4"></i>
+          <span class="fw-semibold">Menu</span>
+        </label>
+      </div>
+      <aside class="col-12 col-lg-2 collapse d-lg-block" id="asideMenu">
+        <div class="card app-card sidebar h-100">
+          <div class="card-body mt-4">
+            <div class="brand  mb-5" href="#">
+              <img src="/images/Logo.svg" alt="" style="width: 300px;">
+            </div>
+
+            <nav class="nav flex-column gap-3 ">
+              <a class="nav-link " href="dashboard.html">Dashboard &gt;</a>
+              <a class="nav-link" href="utilisateur.html">Utilisateurs &gt;</a>
+              <a class="nav-link" href="messagerie.html">Messagerie &gt;</a>
+              <a class="nav-link" href="tache.html">Taches &gt;</a>
+              <a class="nav-link" href="#">Calendrier &gt;</a>
+              <a class="nav-link active" href="compte.html">Comptes &gt;</a>
+            </nav>
+          </div>
+        </div>
+      </aside>
+
+      <section class="col-12 col-lg-10 d-flex flex-column vh-100 overflow-hidden">
+        <div class="card app-card topbar mb-3">
+          <div class="card-body d-flex align-items-center justify-content-between py-2">
+            <div>
+              <h1 class="mb-2">Bonjour, Adminou Sani</h1>
+              <p class="breadcrumb-line mb-0"><i class="bi bi-house-fill"></i> &gt; Tableau de bord</p>
+            </div>
+            <div class="d-flex align-items-center gap-3 top-icons">
+              <i class="bi bi-gear"></i>
+              <span class="bell-wrap"><i class="bi bi-bell"></i><span class="dot"></span></span>
+              <i class="bi bi-person"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card app-card main-panel flex-grow-1 overflow-auto min-h-0">
+          <div class="container-fluid py-4 ">
+            <!-- Onglets de navigation -->
+            <ul class="nav nav-pills d-flex justify-content-center align-items-center bg-secon bg-opacity-25 rounded-3 p-2 mb-4 gap-5 flex-nowrap overflow-auto">
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2" href="#" data-bs-toggle="tab"
+                  data-bs-target="#compte-tab">
+                  <i class="bi bi-person fs-5 fs-1"></i><span class="fw-semibold">Compte</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2 text-light" href="#" data-bs-toggle="tab"
+                  data-bs-target="#securite-tab">
+                  <i class="bi bi-lock fs-5 fs-1"></i><span class="fw-semibold">Sécurité</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2 text-light" href="#" data-bs-toggle="tab"
+                  data-bs-target="#documents-tab">
+                  <i class="bi bi-file-earmark fs-5 fs-1"></i><span class="fw-semibold">Documents</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2 text-light" href="#" data-bs-toggle="tab"
+                  data-bs-target="#historique-tab">
+                  <i class="bi bi-card-list fs-5 fs-1"></i><span class="fw-semibold">Historique</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex align-items-center gap-2 text-light" href="#" data-bs-toggle="tab"
+                  data-bs-target="#connexion-tab">
+                  <i class="bi bi-link-45deg fs-5 fs-1"></i><span class="fw-semibold">Connexion</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <!-- ===================== ONGLET COMPTE ===================== -->
+              <div class="tab-pane fade show active" id="compte-tab">
+                <div class="bg-secondar bg-opacity-10 border border-secondary border-opacity-25 rounded-3 p-4 p-md-5">
+
+                  <!-- Photo de profil -->
+                  <div class="row mb-5">
+                    <div class="col-auto">
+                      <div class="bg-secon bg-opacity-50 rounded-3" style="width:280px;height:280px;"></div>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-start">
+                      <div class="mb-3">
+                        <button type="button" class="btn btn-wa fw-semibold me-2">Changer la photo de
+                          profil</button>
+                        <button type="button" class="btn btn-secondary fw-semibold">Réinitialiser</button>
+                      </div>
+                      <p class="text-light mb-1">Format pris en charge JPG, GIF, PNG.</p>
+                      <p class="text-light ">Taille maximale pris en charge 800k</p>
+                    </div>
+                  </div>
+
+                  <!-- Formulaire -->
+                  <form>
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Nom</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Nom Actuel">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Prénom</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Prénom Actuel">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Email</label>
+                        <input type="email" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Email Actuel">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Status</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Status Actuel">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Role</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Role Actuel">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Tache</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Tache Actuel">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">N° de téléphone</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Numéro Actuel">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Adresse</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Adresse Actuel">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Pays</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Pays Actuel">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Ville</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Ville Actuel">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Boite postale</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Boite postale Actuel">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label fw-semibold">Langue</label>
+                        <input type="text" class="form-control bg-secondar bg-opacity-25 border-light border-2"
+                          placeholder="Langue Actuel">
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <button type="submit" class="btn btn-wa fw-semibold me-2">Sauvegarder les
+                        changements</button>
+                      <button type="button" class="btn btn-secondary fw-semibold">Annuler</button>
+                    </div>
+                  </form>
+                </div>
+
+                <!-- Suppression du compte -->
+                <div
+                  class="bg-secondar bg-opacity-10 border border-secondary border-opacity-25 rounded-3 p-4 p-md-5 mt-4">
+                  <h5 class="fw-bold mb-3">Supprimez le compte</h5>
+                  <div class="alert alert-warning bg-warning bg-opacity-10 border-warning text-warning-emphasis">
+                    <p class="mb-1">Etes vous sur de vouloir supprimez ce compte</p>
+                    <p class="mb-0">Une fois supprimer vous ne pourrez plus récupérez ce compte</p>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="confirmDelete">
+                    <label class="form-check-label" for="confirmDelete">
+                      Je confirme la suppression de ce compte
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ===================== AUTRES ONGLETS (placeholders) ===================== -->
+              <div class="tab-pane fade" id="securite-tab">
+                <div
+                  class="bg-secondary bg-opacity-10 border border-secondary border-opacity-25 rounded-3 p-5 text-center text-secondary">
+                  Contenu de l'onglet Sécurité
+                </div>
+              </div>
+              <div class="tab-pane fade" id="documents-tab">
+                <div
+                  class="bg-secondary bg-opacity-10 border border-secondary border-opacity-25 rounded-3 p-5 text-center text-secondary">
+                  Contenu de l'onglet Documents
+                </div>
+              </div>
+              <div class="tab-pane fade" id="historique-tab">
+                <div
+                  class="bg-secondary bg-opacity-10 border border-secondary border-opacity-25 rounded-3 p-5 text-center text-secondary">
+                  Contenu de l'onglet Historique
+                </div>
+              </div>
+              <div class="tab-pane fade" id="connexion-tab">
+                <div
+                  class="bg-secondary bg-opacity-10 border border-secondary border-opacity-25 rounded-3 p-5 text-center text-secondary">
+                  Contenu de l'onglet Connexion
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

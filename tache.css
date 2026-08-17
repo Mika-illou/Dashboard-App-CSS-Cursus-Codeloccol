@@ -1,0 +1,85 @@
+body {
+  color: #f4f4f4 !important;
+  background: #3f3f3f;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:linear-gradient(115deg,rgba(255,255,255,.08) 0 18%,transparent 18% 44%,rgba(255,255,255,.1) 44% 66%,transparent 66% ),linear-gradient(120deg, #5c5c5c, #373737, #5c5c5c, #2a2a2a );
+    background-size: 300% 300%;
+    animation: bgMove 12s ease-in-out infinite alternate;
+}
+
+.app-card {
+  background: rgba(112, 112, 112, .72);
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 6px;
+  color: #f4f4f4 !important;
+
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+.sidebar  image {
+  width: 25% !important;
+  
+}
+
+.nav-link {
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #fff;
+  background: #f1783e;
+}
+.nav-link:hover{
+  background-color: #9A9A9A;
+}
+.topbar h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.breadcrumb-line,
+.top-icons {
+  font-size: 1.35rem;
+}
+
+.top-icons {
+  font-size: 2rem;
+}
+
+.bell-wrap {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: -4px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  background: #f1783e;
+  border-radius: 50%;
+}
+
+
+
+.overlap-circle{
+    margin-left: -13px; /* Ajuste cette valeur selon le chevauchement souhaité */
+}
+.text-color{
+  color: #FB7048;
+}

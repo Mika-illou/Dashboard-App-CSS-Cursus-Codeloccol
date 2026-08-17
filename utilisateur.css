@@ -1,0 +1,163 @@
+body {
+  color: #f4f4f4 !important;
+  background: #3f3f3f;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:linear-gradient(115deg,rgba(255,255,255,.08) 0 18%,transparent 18% 44%,rgba(255,255,255,.1) 44% 66%,transparent 66% ),linear-gradient(120deg, #5c5c5c, #373737, #5c5c5c, #2a2a2a );
+    background-size: 300% 300%;
+    animation: bgMove 12s ease-in-out infinite alternate;
+}
+
+.app-card {
+  background: rgba(112, 112, 112, .72);
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 6px;
+  color: #f4f4f4 !important;
+}
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.sidebar .brand {
+  color: #f27a3d;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.sidebar .brand i {
+  font-size: 2.6rem;
+}
+
+.nav-link {
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #fff;
+  background: #f1783e;
+}
+.nav-link:hover{
+  background-color: #9A9A9A;
+}
+.topbar h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.breadcrumb-line,
+.top-icons {
+  font-size: 1.35rem;
+}
+
+.top-icons {
+  font-size: 2rem;
+}
+
+.bell-wrap {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: -4px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  background: #f1783e;
+  border-radius: 50%;
+}
+
+.glass-panel,
+.user-row {
+  background: rgba(130, 130, 130, .64);
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .38);
+  backdrop-filter: blur(14px);
+ 
+}
+.form-select,
+.form-control {
+  color: #fff;
+  background-color: rgba(95, 95, 95, .45);
+  border: 2px solid rgba(255, 255, 255, .75);
+  font-weight: 700;
+}
+.form-select:focus,
+.form-control:focus {
+  color: #fff;
+  background-color: rgba(95, 95, 95, .55);
+  border-color: #fff;
+  box-shadow: none;
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, .75);
+}
+
+.btn-primary {
+  background: #ff6f35;
+  border-color: #ff6f35;
+}
+.btn-secondary {
+  background: #7f8588;
+  border-color: #7f8588;
+}
+.table-head {
+  border-bottom: 3px solid rgba(255, 255, 255, .18);
+  font-size: 1.25rem;
+}
+.user-row {
+  color: #fff;
+}
+.avatar {
+  width: 74px;
+  height: 74px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: #ff6f35;
+  background: #f1f1f1;
+  border-radius: 50%;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.form-check-input {
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .55);
+}
+
+.action-icons .btn {
+  color: #fff;
+  padding: .25rem .5rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .table-head {
+    display: none;
+  }
+
+  .user-row .card-body {
+    row-gap: 1rem;
+  }
+}
+.Scrol_Y{
+  overflow-y: scroll !important;
+  height: 300px !important;
+}
+
+
+
+
