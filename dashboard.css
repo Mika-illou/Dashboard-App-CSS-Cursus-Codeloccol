@@ -32,23 +32,11 @@ body {
     transform:translateX(25%);
   }
 }
-
-.app-card {
-  background: rgba(112, 112, 112, .72);
-  box-shadow: inset 0 0 2px white;
-  border-radius: 6px;
-  color: #f4f4f4 !important;
-
-}
-
-
-
-
-
 .sidebar  image {
   width: 25% !important;
   
 }
+
 
 .nav-link {
   color: #fff;
@@ -93,11 +81,3 @@ body {
   border-radius: 50%;
 }
 
-
-
-.overlap-circle{
-    margin-left: -13px; /* Ajuste cette valeur selon le chevauchement souhaité */
-}
-.text-color{
-  color: #FB7048;
-}

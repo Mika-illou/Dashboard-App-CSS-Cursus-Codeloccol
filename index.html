@@ -9,14 +9,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
   <main class="min-vh-100 d-flex align-items-center justify-content-center p-1 login-page ">
     <section class="card login-card">
       <div class="card-body p-1">
         <div class="brand d-flex align-items-center justify-content-center mb-4">
           <img src="/images/Logo.svg" alt="" style="width: 300px;">
         </div>
-       <h1 class="mb-4 text-light">Se connecter</h1>
+        <h1 class="mb-4 text-light">Se connecter</h1>
         <form>
           <div class="mb-4">
             <label for="email" class="form-label text-light">Email</label>
@@ -27,7 +32,9 @@
             <input id="password" class="form-control form-control-lg" type="password">
           </div>
           <div class="text-center mb-3">
-            <a href="dashboard.html"><div type="submit" class="btn btn-primary btn-lg login-btn text-light">Se Connecter</div></a>
+            <a href="dashboard.html">
+              <div type="submit" class="btn btn-primary btn-lg login-btn text-light">Se Connecter</div>
+            </a>
           </div>
           <p class="text-center continue-text mb-3 text-light">ou continuez avec</p>
           <div class="d-flex justify-content-center gap-2 mb-3">
@@ -44,4 +51,5 @@
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
