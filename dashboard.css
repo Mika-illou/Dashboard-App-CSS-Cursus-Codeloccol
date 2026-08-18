@@ -37,6 +37,19 @@ body {
   
 }
 
+.app-card {
+  background: rgba(112, 112, 112, .72);
+  box-shadow: inset 0 0 2px white;
+  border-radius: 6px;
+  color: #f4f4f4 !important;
+
+}
+
+
+.sidebar  image {
+  width: 25% !important;
+  
+}
 
 .nav-link {
   color: #fff;
@@ -81,3 +94,32 @@ body {
   border-radius: 50%;
 }
 
+.bg-color {
+    background-color: #828282;
+}
+.bg-seco{
+    background-color: #9C9C9C;
+}
+
+.overlap-circle{
+    margin-left: -13px; 
+}
+.text-color{
+  color: #FB7048;
+}
+.map-card{
+  background-color: #828282;
+  color: #fff;
+}
+#features path:hover{
+  background-color: #FF9B71 !important;
+  cursor: pointer;
+}
+.orange{
+  width: 100px!important;
+  height:100px !important;
+  background-color: #f1783e !important;
+}
+.bg-dang{
+  background-color: #A9A9A9;
+}
