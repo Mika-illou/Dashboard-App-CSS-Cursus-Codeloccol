@@ -54,6 +54,7 @@ body {
 .nav-link {
   color: #fff;
   border-radius: 6px;
+
   font-weight: 700;
 }
 
@@ -111,7 +112,7 @@ body {
   color: #fff;
 }
 #features path:hover{
-  background-color: #FF9B71 !important;
+  fill: #e9a78b !important;
   cursor: pointer;
 }
 
