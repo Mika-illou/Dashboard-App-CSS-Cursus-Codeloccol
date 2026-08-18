@@ -54,7 +54,6 @@ body {
 .nav-link {
   color: #fff;
   border-radius: 6px;
-  font-size: 1.7rem;
   font-weight: 700;
 }
 
@@ -115,11 +114,20 @@ body {
   background-color: #FF9B71 !important;
   cursor: pointer;
 }
-.orange{
-  width: 100px!important;
-  height:100px !important;
-  background-color: #f1783e !important;
-}
+
 .bg-dang{
   background-color: #A9A9A9;
+}
+
+.bg-warnin{
+  background-color: #FF9C72;
+}
+.bg-warni{
+  background-color: #FD9B74;
+}
+
+.bg-warn{
+  background-color: #FF763D;
+}.bg-war{
+  background-color: #FFBEA3;
 }
