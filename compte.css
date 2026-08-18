@@ -37,6 +37,7 @@ body {
   background: rgba(112, 112, 112, .72);
   box-shadow: inset 0 0 2px white;
   border-radius: 6px;
+  opacity: 25;
   color: #f4f4f4 !important;
 
 }
@@ -105,9 +106,11 @@ placeholder {
 .bg-secondar{
     background-color: #7D7D7D;
     color: white !important;
+    opacity: 25;
 }
 .bg-warning{
   background-color: #716661;
   color: #B97458;
+  opacity: 25;
 }
  

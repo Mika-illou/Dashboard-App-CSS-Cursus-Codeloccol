@@ -97,9 +97,11 @@ body {
 
 .bg-color {
     background-color: #828282;
+    opacity: 25;
 }
 .bg-seco{
     background-color: #9C9C9C;
+    opacity: 25;
 }
 
 .overlap-circle{

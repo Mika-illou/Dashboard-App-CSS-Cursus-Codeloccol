@@ -40,6 +40,7 @@ body {
    box-shadow: 0 3px 10px rgba(0, 0, 0, .38);
   border-radius: 6px;
   color: #f4f4f4 !important;
+  opacity: 25;
 }
 
 
@@ -64,6 +65,7 @@ body {
 .nav-link:hover {
   color: #fff;
   background: #f1783e;
+  opacity: 25;
 }
 .nav-link:hover{
   background-color: #9A9A9A;
@@ -102,6 +104,7 @@ body {
   border-radius: 7px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .38);
   backdrop-filter: blur(14px);
+  opacity: 25;
  
 }
 .user-row {
@@ -110,6 +113,7 @@ body {
   border-radius: 7px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .38);
   backdrop-filter: blur(14px);
+  opacity: 25;
  
 }
 
@@ -119,6 +123,7 @@ body {
   background-color: rgba(95, 95, 95, .45);
   border: 2px solid rgba(255, 255, 255, .75);
   font-weight: 700;
+  opacity: 25;
 }
 .form-select:focus,
 .form-control:focus {
@@ -126,6 +131,7 @@ body {
   background-color: rgba(95, 95, 95, .55);
   border-color: #fff;
   box-shadow: none;
+  opacity: 25;
 }
 .form-control::placeholder {
   color: rgba(255, 255, 255, .75);
@@ -134,6 +140,7 @@ body {
 .btn-primary {
   background: #ff6f35;
   border-color: #ff6f35;
+  opacity: 25;
 }
 .btn-secondary {
   background: #7f8588;
