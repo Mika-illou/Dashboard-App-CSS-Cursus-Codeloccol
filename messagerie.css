@@ -50,7 +50,11 @@ body {
 .nav-link {
   color: #fff;
   border-radius: 6px;
+  font-size: 13px;
   font-weight: 700;
+}
+.tail-nav{
+  font-size: 12px;
 }
 
 .nav-link.active,

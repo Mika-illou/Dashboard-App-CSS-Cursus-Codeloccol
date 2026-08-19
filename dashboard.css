@@ -1,6 +1,7 @@
 
 body {
   margin:0;
+  background-color: #484848;
 }
 
 .bg {
@@ -135,4 +136,7 @@ body {
   background-color: #FF763D;
 }.bg-war{
   background-color: #FFBEA3;
+}
+.cl-ta{
+  font-size: 12px;
 }
