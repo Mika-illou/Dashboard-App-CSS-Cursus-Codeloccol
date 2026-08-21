@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="messagerie.css">
 </head>
+
 <body>
   <div class="bg"></div>
   <div class="bg bg2"></div>
@@ -17,8 +18,8 @@
     <div class="row g-3 min-vh-100">
       <div class="col-12 d-lg-none">
         <input type="checkbox" class="btn-check" id="sidebarToggle" autocomplete="off">
-        <label class="btn app-card w-100 d-flex align-items-center justify-content-center gap-2"
-               for="sidebarToggle" data-bs-toggle="collapse" data-bs-target="#asideMenu" role="button">
+        <label class="btn app-card w-100 d-flex align-items-center justify-content-center gap-2" for="sidebarToggle"
+          data-bs-toggle="collapse" data-bs-target="#asideMenu" role="button">
           <i class="bi bi-list fs-4"></i>
           <span class="fw-semibold">Menu</span>
         </label>
@@ -56,108 +57,205 @@
           </div>
         </div>
 
-        <div class="container-fluid rounded-3 border border-light border-opacity-25 shadow-lg bg-opacity-50 p-3 p-xl-4 div-bg">
-          <nav class="navbar navbar-expand-lg rounded-3 border border-light border-opacity-25 bg-opacity-50 shadow-sm mb-4 px-4 py-2 div-bV">
-            <div class="container-fluid">
-              <ul class="navbar-nav w-100 justify-content-between align-items-center gap-3">
-                <li class="nav-item">
-                  <a class="nav-link text-white tail-nav fw-bold px-5 py-4 rounded-3 border border-light border-opacity-25 bg-light bg-opacity-25 shadow" href="messagerie.html">
-                    <i class="bi bi-envelope fs-4 align-middle me-3"></i>Réception
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white fw-bold tail-nav " href="envoi.html">
-                    <i class="bi bi-send fs-4 align-middle me-3"></i>Envoi
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white fw-bold tail-nav" href="#">
-                    <i class="bi bi-envelope fs-4 align-middle me-3"></i>Brouillon
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white fw-bold tail-nav" href="#">
-                    <i class="bi bi-envelope fs-4 align-middle me-3"></i>Epinglé
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white fw-bold tail-nav" href="#">
-                    <i class="bi bi-envelope fs-4 align-middle me-3"></i>Spam
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white fw-bold tail-nav" href="#">
-                    <i class="bi bi-envelope fs-4 align-middle me-3"></i>Corbeille
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="row align-items-center mb-4 gy-3">
-            <div class="col-12 col-lg">
-              <div class="d-flex align-items-center gap-4 fs-1">
-                <input class="form-check-input bg-transparent border-light border-3 fs-4" type="checkbox" aria-label="Tout sélectionner">
-                <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-trash3"></i></button>
-                <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-envelope-open"></i></button>
-                <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-folder"></i></button>
-                <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-tag"></i></button>
-              </div>
-            </div>
-            <div class="col-12 col-lg-auto">
-              <div class="d-flex justify-content-lg-end gap-4 fs-1">
-                <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-arrow-clockwise"></i></button>
-                <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-three-dots-vertical"></i></button>
-              </div>
-            </div>
-          </div>
+        <div
+          class="container-fluid rounded-3 border border-light border-opacity-25 shadow-lg bg-opacity-50 p-3 p-xl-4 div-bg">
+          <div
+            class="navbar-expand-lg rounded-3 border border-light border-opacity-25 bg-opacity-50 shadow-sm mb-4 px-4 py-2 div-bV">
 
-          <div class="vstack gap-3">
-            <article class="card text-white border-0 rounded-3 shadow bg-light bg-opacity-25">
-              <div class="card-body py-4 px-4">
-                <div class="row g-4">
-                  <div class="col-12 col-md-2 d-flex align-items-center justify-content-start gap-3 text-center fs-1">
-                   <input class="form-check-input bg-transparent border-light border-3 fs-4" type="checkbox" aria-label="Tout sélectionner"> <i class="bi bi-pin-angle fs-4"></i>
+            <ul class="nav nav-pills w-100 justify-content-between align-items-center gap-3" id="pills-tab   "
+              role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active text-white tail-nav fw-bold p-3 px-4" id="pills-home-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                  aria-selected="true">
+                  <i class="bi bi-envelope fs-4 align-middle me-3"></i>Réception
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-white fw-bold tail-nav p-3 px-4 " id="pills-profile-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                  aria-controls="pills-profile" aria-selected="false">
+                  <i class="bi bi-send fs-4 align-middle me-3"></i>Envoi
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-white fw-bold tail-nav p-3 px-4" href="#" id="pills-contact-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                  aria-controls="pills-contact" aria-selected="false">
+                  <i class="bi bi-envelope fs-4 align-middle me-3"></i>Brouillon
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-white fw-bold tail-nav p-3 px-4" id="pills-contact-tab"
+                  data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                  aria-controls="pills-contact" aria-selected="false">
+                  <i class="bi bi-envelope fs-4 align-middle me-3"></i>Epinglé
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-white fw-bold tail-nav p-3 px-4" id="pills-contact-spam"
+                  data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                  aria-controls="pills-contact" aria-selected="false">
+                  <i class="bi bi-envelope fs-4 align-middle me-3"></i>Spam
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-white fw-bold tail-nav p-3 px-4" id="pills-contact-corbeolle"
+                  data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                  aria-controls="pills-contact" aria-selected="false">
+                  <i class="bi bi-envelope fs-4 align-middle me-3"></i>Corbeille
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row align-items-center mb-4 gy-3 ">
+                <div class="col-12 col-lg">
+                  <div class="d-flex align-items-center gap-4 fs-1 px-4">
+                    <input class="form-check-input bg-transparent border-light border-3 fs-4 " type="checkbox"
+                      aria-label="Tout sélectionner">
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-trash3"></i></button>
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-envelope-open"></i></button>
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-folder"></i></button>
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-tag"></i></button>
                   </div>
-                  <div class="col-12 col-md-3 d-flex align-items-center gap-4">
-                    <span class="color_C d-flex align-items-center justify-content-center bg-light rounded-circle fw-bold display-6 p-3 lh-1">ZT</span>
-                    <h2 class="h5 fw-bold mb-0">Zibo Tanko</h2>
-                  </div>
-                  <div class="col-12 col-md-2 fw-bold h6">
-                    Rappel sur le rendu <br>projet N°00000
-                  </div>
-                  <div class="col-12 col-md-3 h6 text-truncate">
-                    Lorem ipsum sit dolor amet, lorem ipsu...
-                  </div>
-                  <div class="col-12 col-md-2 text-md-end fw-bold h6">
-                    08:23 AM
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <div class="d-flex justify-content-lg-end gap-4 fs-1">
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-arrow-clockwise"></i></button>
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-three-dots-vertical"></i></button>
                   </div>
                 </div>
               </div>
-            </article>
-             <article class="card text-white border-0 rounded-3 shadow bg-light bg-opacity-25">
-              <div class="card-body py-4 px-4">
-                <div class="row g-4">
-                  <div class="col-12 col-md-2 d-flex align-items-center justify-content-start gap-3 text-center fs-4">
-                   <input class="form-check-input bg-transparent border-light border-3" type="checkbox" aria-label="Tout sélectionner"> <i class="bi bi-pin-angle fs-4"></i>
+
+              <div class="vstack gap-3">
+                <article class="card text-white border-0 rounded-3 shadow bg-light bg-opacity-25">
+                  <div class="card-body py-4 px-4">
+                    <div class="row g-4">
+                      <div
+                        class="col-12 col-md-2 d-flex align-items-center justify-content-start gap-3 text-center fs-1">
+                        <input class="form-check-input bg-transparent border-light border-3 fs-4" type="checkbox"
+                          aria-label="Tout sélectionner"> <i class="bi bi-pin-angle fs-4"></i>
+                      </div>
+                      <div class="col-12 col-md-3 d-flex align-items-center gap-4">
+                        <span
+                          class="color_C d-flex align-items-center justify-content-center bg-light rounded-circle fw-bold display-6 p-3 lh-1">ZT</span>
+                        <h2 class="h5 fw-bold mb-0">Zibo Tanko</h2>
+                      </div>
+                      <div class="col-12 col-md-2 fw-bold h6">
+                        Rappel sur le rendu <br>projet N°00000
+                      </div>
+                      <div class="col-12 col-md-3 h6 text-truncate">
+                        Lorem ipsum sit dolor amet, lorem ipsu...
+                      </div>
+                      <div class="col-12 col-md-2 text-md-end fw-bold h6">
+                        08:23 AM
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-12 col-md-3 d-flex align-items-center gap-4">
-                    <span class="color_C d-flex align-items-center justify-content-center bg-light rounded-circle fw-bold display-6 p-3 lh-1">ZT</span>
-                    <h2 class="h5 fw-bold mb-0">Zibo Tanko</h2>
+                </article>
+                <article class="card text-white border-0 rounded-3 shadow bg-light bg-opacity-25">
+                  <div class="card-body py-4 px-4">
+                    <div class="row g-4">
+                      <div
+                        class="col-12 col-md-2 d-flex align-items-center justify-content-start gap-3 text-center fs-4">
+                        <input class="form-check-input bg-transparent border-light border-3" type="checkbox"
+                          aria-label="Tout sélectionner"> <i class="bi bi-pin-angle fs-4"></i>
+                      </div>
+                      <div class="col-12 col-md-3 d-flex align-items-center gap-4">
+                        <span
+                          class="color_C d-flex align-items-center justify-content-center bg-light rounded-circle fw-bold display-6 p-3 lh-1">ZT</span>
+                        <h2 class="h5 fw-bold mb-0">Zibo Tanko</h2>
+                      </div>
+                      <div class="col-12 col-md-2 fw-bold h6">
+                        Rappel sur le rendu <br>projet N°00000
+                      </div>
+                      <div class="col-12 col-md-3 h6 text-truncate">
+                        Lorem ipsum sit dolor amet, lorem ipsu...
+                      </div>
+                      <div class="col-12 col-md-2 text-md-end fw-bold h6">
+                        08:23 AM
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-12 col-md-2 fw-bold h6">
-                    Rappel sur le rendu <br>projet N°00000
+                </article>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row align-items-center mb-4 gy-3 px-4">
+                <div class="col-12 col-lg">
+                  <div class="d-flex align-items-center gap-4 fs-1">
+                    <input class="form-check-input bg-transparent border-light border-3 fs-4" type="checkbox"
+                      aria-label="Tout sélectionner">
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-trash3"></i></button>
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-envelope-open"></i></button>
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-folder"></i></button>
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-tag"></i></button>
                   </div>
-                  <div class="col-12 col-md-3 h6 text-truncate">
-                    Lorem ipsum sit dolor amet, lorem ipsu...
-                  </div>
-                  <div class="col-12 col-md-2 text-md-end fw-bold h6">
-                    08:23 AM
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <div class="d-flex justify-content-lg-end gap-4 fs-4">
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-arrow-clockwise"></i></button>
+                    <button class="btn btn-link text-white p-0 fs-4"><i class="bi bi-three-dots-vertical"></i></button>
                   </div>
                 </div>
               </div>
-            </article>
 
+              <div class="vstack gap-3">
+                <article class="card text-white border-0 rounded-3 shadow bg-light bg-opacity-25">
+                  <div class="card-body py-4 px-4">
+                    <div class="row g-4">
+                      <div
+                        class="col-12 col-md-2 d-flex align-items-center justify-content-start gap-3 text-center fs-1">
+                        <input class="form-check-input bg-transparent border-light border-3 fs-4" type="checkbox"
+                          aria-label="Tout sélectionner"> <i class="bi bi-pin-angle fs-4"></i>
+                      </div>
+                      <div class="col-12 col-md-3 d-flex align-items-center gap-4">
+                        <span
+                          class="color_C d-flex align-items-center justify-content-center bg-light rounded-circle fw-bold display-6 p-3 lh-1">AS</span>
+                        <h2 class="h5 fw-bold mb-0">Adminou sani</h2>
+                      </div>
+                      <div class="col-12 col-md-2 fw-bold h6">
+                        Rappel sur le rendu <br>projet N°00000
+                      </div>
+                      <div class="col-12 col-md-3 h6 text-truncate">
+                        Lorem ipsum sit dolor amet, lorem ipsu...
+                      </div>
+                      <div class="col-12 col-md-2 text-md-end fw-bold h6">
+                        08:23 AM
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+
+            </div>
+
+            <div class="tab-pane fade" id="pills-contact-spam" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+            </div>
+            <div class="tab-pane fade" id="pills-contact-corbeolle" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+            </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
           <div class="py-5"></div>
         </div>
       </section>
@@ -165,4 +263,5 @@
   </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
