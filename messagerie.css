@@ -61,6 +61,12 @@ body {
   color: #fff;
   background: #f1783e;
 }
+
+#message-nav .nav-link.active{
+  box-shadow: inset 0 0 40px white !important;
+  background-color: transparent !important;
+}
+
 .nav-link:hover{
   background-color: #9A9A9A;
 }
