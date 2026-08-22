@@ -14,13 +14,13 @@
   <div class="bg"></div>
   <div class="bg bg2"></div>
   <div class="bg bg3"></div>
-  
+
   <main class="container-fluid min-vh-100 p-2 login-page">
     <div class="row g-3 min-vh-100 ">
       <div class="col-12 d-lg-none">
         <input type="checkbox" class="btn-check" id="sidebarToggle" autocomplete="off">
-        <label class="btn app-card w-100 d-flex align-items-center justify-content-center gap-2"
-               for="sidebarToggle" data-bs-toggle="collapse" data-bs-target="#asideMenu" role="button">
+        <label class="btn app-card w-100 d-flex align-items-center justify-content-center gap-2" for="sidebarToggle"
+          data-bs-toggle="collapse" data-bs-target="#asideMenu" role="button">
           <i class="bi bi-list fs-4"></i>
           <span class="fw-semibold">Menu</span>
         </label>
@@ -28,17 +28,17 @@
       <aside class="col-12 col-lg-2 collapse d-lg-block" id="asideMenu">
         <div class="card app-card sidebar h-100">
           <div class="card-body mt-4">
-            <div class="brand  mb-5" href="#">
+            <div class="brand mb-5" href="#">
               <img src="/images/Logo.svg" alt="" style="width: 100%;">
             </div>
 
-            <nav class="nav flex-column gap-3 ">
-              <a class="nav-link " href="dashboard.html">Dashboard &gt;</a>
-              <a class="nav-link" href="utilisateur.html">Utilisateurs &gt;</a>
-              <a class="nav-link" href="messagerie.html">Messagerie &gt;</a>
-              <a class="nav-link" href="tache.html">Taches &gt;</a>
-              <a class="nav-link" href="#">Calendrier &gt;</a>
-              <a class="nav-link active" href="compte.html">Comptes &gt;</a>
+            <nav class="nav flex-column gap-3">
+              <a class="nav-link text-nowrap" href="dashboard.html">Dashboard &gt;</a>
+              <a class="nav-link  text-nowrap" href="utilisateur.html">Utilisateurs &gt;</a>
+              <a class="nav-link text-nowrap" href="messagerie.html">Messagerie &gt;</a>
+              <a class="nav-link text-nowrap" href="tache.html">Taches &gt;</a>
+              <a class="nav-link text-nowrap" href="#">Calendrier &gt;</a>
+              <a class="nav-link active text-nowrap" href="compte.html">Comptes &gt;</a>
             </nav>
           </div>
         </div>
@@ -59,9 +59,10 @@
           </div>
         </div>
 
-        <div class="card app-card main-panel flex-grow-1 overflow-auto min-h-0">
+        <div class="card app-card main-panel flex-grow-1 overflow-x-auto min-h-0">
           <div class="container-fluid py-4 ">
-            <ul class="nav nav-pills d-flex justify-content-center align-items-center bg-secon bg-opacity-25 rounded-3 p-2 mb-4 gap-5 flex-nowrap overflow-auto">
+            <ul
+              class="nav nav-pills d-flex justify-content-center align-items-center bg-secon bg-opacity-25 rounded-3 p-2 mb-4 gap-5 flex-nowrap overflow-auto">
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="#" data-bs-toggle="tab"
                   data-bs-target="#compte-tab">
@@ -187,7 +188,8 @@
                     </div>
                   </form>
                 </div>
-                <div class="bg-secondar bg-opacity-10 border border-secondary border-opacity-25 rounded-3 p-4 p-md-5 mt-4">
+                <div
+                  class="bg-secondar bg-opacity-10 border border-secondary border-opacity-25 rounded-3 p-4 p-md-5 mt-4">
                   <h5 class="fw-bold mb-3">Supprimez le compte</h5>
                   <div class="alert alert-warning bg-warning bg-opacity-10 border-warning text-warning-emphasis">
                     <p class="mb-1">Etes vous sur de vouloir supprimez ce compte</p>

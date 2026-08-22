@@ -16,10 +16,10 @@
   <div class="bg bg3"></div>
   <main class="container-fluid min-vh-100 p-2 Scrol_Y">
     <div class="row g-3 min-vh-100 g-2">
-       <div class="col-12 d-lg-none">
+      <div class="col-12 d-lg-none">
         <input type="checkbox" class="btn-check" id="sidebarToggle" autocomplete="off">
-        <label class="btn app-card w-100 d-flex align-items-center justify-content-center gap-2"
-               for="sidebarToggle" data-bs-toggle="collapse" data-bs-target="#asideMenu" role="button">
+        <label class="btn app-card w-100 d-flex align-items-center justify-content-center gap-2" for="sidebarToggle"
+          data-bs-toggle="collapse" data-bs-target="#asideMenu" role="button">
           <i class="bi bi-list fs-4"></i>
           <span class="fw-semibold">Menu</span>
         </label>
@@ -28,20 +28,21 @@
       <aside class="col-12 col-lg-2 collapse d-lg-block" id="asideMenu">
         <div class="card app-card sidebar h-100">
           <div class="card-body mt-4">
-            <div class="brand  mb-5" href="#">
+            <div class="brand mb-5" href="#">
               <img src="/images/Logo.svg" alt="" style="width: 100%;">
             </div>
 
-            <nav class="nav flex-column gap-3 ">
-              <a class="nav-link " href="dashboard.html">Dashboard &gt;</a>
-              <a class="nav-link active" href="utilisateur.html">Utilisateurs &gt;</a>
-              <a class="nav-link" href="messagerie.html">Messagerie &gt;</a>
-              <a class="nav-link" href="tache.html">Taches &gt;</a>
-              <a class="nav-link" href="#">Calendrier &gt;</a>
-              <a class="nav-link" href="compte.html">Comptes &gt;</a>
+            <nav class="nav flex-column gap-3">
+              <a class="nav-link text-nowrap" href="dashboard.html">Dashboard &gt;</a>
+              <a class="nav-link active text-nowrap" href="utilisateur.html">Utilisateurs &gt;</a>
+              <a class="nav-link text-nowrap" href="messagerie.html">Messagerie &gt;</a>
+              <a class="nav-link text-nowrap" href="tache.html">Taches &gt;</a>
+              <a class="nav-link text-nowrap" href="#">Calendrier &gt;</a>
+              <a class="nav-link text-nowrap" href="compte.html">Comptes &gt;</a>
             </nav>
           </div>
         </div>
+      </aside>
       </aside>
       <section class="col-12 col-lg-10 d-flex flex-column vh-100 overflow-hidden">
         <div class="card app-card topbar mb-3 flex-shrink-0">
@@ -62,7 +63,8 @@
 
           <div class="card glass-panel">
             <div class="card-body p-4">
-              <h1 class="h4 fw-bold mb-4 " style="color: white;">Choisissez un des filtres suivant pour modifier la liste</h1>
+              <h1 class="h4 fw-bold mb-4 " style="color: white;">Choisissez un des filtres suivant pour modifier la
+                liste</h1>
               <div class="row g-4 align-items-center mb-3">
                 <div class="col-12 col-lg-4">
                   <select class="form-select form-select-lg">
@@ -106,333 +108,329 @@
                 </div>
               </div>
 
-              <div class="table-head row align-items-center g-0 py-3 mb-3 px-3" style="color: white;">
-                <div class="col-1 text-center">
-                  <input class="form-check-input" type="checkbox" aria-label="Tout sélectionner">
-                </div>
-                <div class="col-3 fw-bold">Utilisateur</div>
-                <div class="col-3 fw-bold">Role</div>
-                <div class="col-2 fw-bold">Status</div>
-                <div class="col-3 fw-bold text-center">Actions</div>
+              <div class="table-responsive">
+                <table class="align-middle user-list"
+                  style="width: 100%; color:#fff; border-collapse: separate; border-spacing: 0 12px;">
+                  <thead>
+                    <tr class="border-bottom border-3 border-write">
+                      <th scope="col" class="py-3 px-4"><input class="form-check-input" type="checkbox"
+                          aria-label="Tout sélectionner">
+                      </th>
+                      <th scope="col" class="py-5">Utilisateur</th>
+                      <th scope="col" class="py-5">Rôle</th>
+                      <th scope="col" class="py-5">Statut</th>
+                      <th scope="col" class="py-5 text-center">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="user-row rounded-5">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Adminou Sani">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">AS</span>
+                          <div>
+                            <div class="fw-bold">Adminou Sani</div>
+                            <div class="small">Adminou@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Administrateur</td>
+                      <td><span class="badge ">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row ">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Analystou Idi">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">AI</span>
+                          <div>
+                            <div class="fw-bold">Analystou Idi</div>
+                            <div class="small">Analystou@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Marketeurs</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Bako Tondi">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">BT</span>
+                          <div>
+                            <div class="fw-bold">Bako Tondi</div>
+                            <div class=" small">Tondi@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Controleurs</td>
+                      <td><span class="badge ">active</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Tchanga Tanko">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">TT</span>
+                          <div>
+                            <div class="fw-bold">Tchanga Tanko</div>
+                            <div class="small">Tanko@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Administrateur</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row mt-5">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Gambo Shehu">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">GS</span>
+                          <div>
+                            <div class="fw-bold">Gambo Shehu</div>
+                            <div class="small">Shehu@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Communicateur</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row rounded-5">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Adminou Sani">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">AS</span>
+                          <div>
+                            <div class="fw-bold">Adminou Sani</div>
+                            <div class="small">Adminou@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Administrateur</td>
+                      <td><span class="badge ">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row ">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Analystou Idi">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">AI</span>
+                          <div>
+                            <div class="fw-bold">Analystou Idi</div>
+                            <div class="small">Analystou@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Marketeurs</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Bako Tondi">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">BT</span>
+                          <div>
+                            <div class="fw-bold">Bako Tondi</div>
+                            <div class=" small">Tondi@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Controleurs</td>
+                      <td><span class="badge ">active</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Tchanga Tanko">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">TT</span>
+                          <div>
+                            <div class="fw-bold">Tchanga Tanko</div>
+                            <div class="small">Tanko@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Administrateur</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row mt-5">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Gambo Shehu">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">GS</span>
+                          <div>
+                            <div class="fw-bold">Gambo Shehu</div>
+                            <div class="small">Shehu@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Communicateur</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row rounded-5">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Adminou Sani">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">AS</span>
+                          <div>
+                            <div class="fw-bold">Adminou Sani</div>
+                            <div class="small">Adminou@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Administrateur</td>
+                      <td><span class="badge ">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row ">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Analystou Idi">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">AI</span>
+                          <div>
+                            <div class="fw-bold">Analystou Idi</div>
+                            <div class="small">Analystou@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Marketeurs</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Bako Tondi">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">BT</span>
+                          <div>
+                            <div class="fw-bold">Bako Tondi</div>
+                            <div class=" small">Tondi@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Controleurs</td>
+                      <td><span class="badge ">active</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Tchanga Tanko">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">TT</span>
+                          <div>
+                            <div class="fw-bold">Tchanga Tanko</div>
+                            <div class="small">Tanko@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Administrateur</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+                    <tr class="user-row mt-5">
+                      <td class="py-3 px-4"><input class="form-check-input" type="checkbox" aria-label="Gambo Shehu">
+                      </td>
+                      <td class="py-3">
+                        <div class="d-flex align-items-center gap-3">
+                          <span class="avatar">GS</span>
+                          <div>
+                            <div class="fw-bold">Gambo Shehu</div>
+                            <div class="small">Shehu@mail.com</div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="fw-bold">Communicateur</td>
+                      <td><span class="badge">inactive</span></td>
+                      <td class="text-center text-nowrap">
+                        <button class="btn fw-bold text-white"><i class="bi bi-pencil"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-trash3"></i></button>
+                        <button class="btn fw-bold text-white"><i class="bi bi-three-dots-vertical"></i></button>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
               </div>
 
-              <div class="user-list d-grid gap-3">
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Adminou Sani"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">AS</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1 class-moyen">Adminou Sani</h2>
-                        <p class="mb-0 class-moyen">Adminou@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Administrateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Analystou Idi"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">AI</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Analystou Idi</h2>
-                        <p class="mb-0">Analystou@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Marketeurs</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Bako Tondi"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">BT</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Bako Tondi</h2>
-                        <p class="mb-0">Tondi@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Controleurs</div>
-                    <div class="col-2 fw-bold">active</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Tchanga Tanko"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">TT</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Tchanga Tanko</h2>
-                        <p class="mb-0">Tanko@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Administrateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Gambo Shehu"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">GS</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Gambo Shehu</h2>
-                        <p class="mb-0">Shehu@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Communicateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
 
 
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Adminou Sani"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">AS</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Adminou Sani</h2>
-                        <p class="mb-0">Adminou@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Administrateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
 
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Analystou Idi"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">AI</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Analystou Idi</h2>
-                        <p class="mb-0">Analystou@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Marketeurs</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Bako Tondi"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">BT</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Bako Tondi</h2>
-                        <p class="mb-0">Tondi@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Controleurs</div>
-                    <div class="col-2 fw-bold">active</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Tchanga Tanko"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">TT</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Tchanga Tanko</h2>
-                        <p class="mb-0">Tanko@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Administrateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Gambo Shehu"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">GS</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Gambo Shehu</h2>
-                        <p class="mb-0">Shehu@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Communicateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Adminou Sani"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">AS</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Adminou Sani</h2>
-                        <p class="mb-0">Adminou@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Administrateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Analystou Idi"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">AI</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Analystou Idi</h2>
-                        <p class="mb-0">Analystou@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Marketeurs</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Bako Tondi"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">BT</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Bako Tondi</h2>
-                        <p class="mb-0">Tondi@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Controleurs</div>
-                    <div class="col-2 fw-bold">active</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Tchanga Tanko"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">TT</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Tchanga Tanko</h2>
-                        <p class="mb-0">Tanko@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Administrateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-
-                <article class="card user-row">
-                  <div class="card-body row align-items-center g-0">
-                    <div class="col-1 text-center"><input class="form-check-input" type="checkbox"
-                        aria-label="Gambo Shehu"></div>
-                    <div class="col-3 d-flex align-items-center gap-3">
-                      <span class="avatar">GS</span>
-                      <div>
-                        <h2 class="h5 fw-bold mb-1">Gambo Shehu</h2>
-                        <p class="mb-0">Shehu@mail.com</p>
-                      </div>
-                    </div>
-                    <div class="col-3 fw-bold">Communicateur</div>
-                    <div class="col-2 fw-bold">inactive</div>
-                    <div class="col-3 text-center action-icons">
-                      <button class="btn btn-link"><i class="bi bi-pencil"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-trash3"></i></button>
-                      <button class="btn btn-link"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                  </div>
-                </article>
-              </div>
             </div>
           </div>
 
@@ -442,4 +440,5 @@
   </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>

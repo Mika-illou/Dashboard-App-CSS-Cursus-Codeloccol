@@ -109,13 +109,12 @@ body {
  
 }
 .user-row {
-  background: #989898;
+  background: #989898 !important;
    box-shadow: inset 0 0 2px hwb(0 96% 4% / 0.926);
   border-radius: 7px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .38);
   backdrop-filter: blur(14px);
   opacity: 25;
- 
 }
 
 .form-select,
@@ -192,6 +191,10 @@ body {
 .Scrol_Y{
   overflow-y: scroll !important;
   height: 300px !important;
+}
+.tavvv{
+  background-color: #8F8F8F !important;
+
 }
 
 
